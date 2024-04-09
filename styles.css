@@ -62,8 +62,20 @@ body {
     padding: 20px 0;
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-img {
     width: 175px;
+}
+
+.logo-capivara {
+    width: 48px;
+    height: 48px;
 }
 
 form {
@@ -210,6 +222,108 @@ footer a {
     font-weight: bold;
     padding: 0 2.5%;
     color: #8e8e8e;
+}
+
+/* PAGINA FEED */
+
+#header-feed {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-bottom: 18px;
+}
+
+#header-feed h1 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+#container-feed {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.btn-voltar {
+    text-align: center;
+    width: 58px;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+}
+
+.btn-voltar:hover {
+    transform: scale(1.01);
+    text-decoration: underline;
+}
+
+.post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.header-post {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+    padding: 10px 0 10px 10px;
+}
+
+.foto-perfil {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+.header-post h2 {
+    font-size: 18px;
+}
+
+.foto-post {
+    width: 100%;
+    max-height: 354px;
+    object-fit: cover;
+    border-radius: 8px;   
+    transition: 0.5s;
+}
+
+.foto-post:hover {
+    transform: scale(1.01);
+}
+
+.interacoes-post {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 8px ;
+}
+
+.btn-post {
+    border: 1px solid var(--black);
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-right: 8px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.btn-post:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 850px) {
